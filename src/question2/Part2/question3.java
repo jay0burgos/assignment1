@@ -10,8 +10,9 @@ public class question3 {
         int[] arr = new int[num];
         for (int i = 0; i < num; i++){
             int temp = random.nextInt(num)+1;
+            
             while(helperArray[temp-1]){     //runs till temp is not an index that is true
-                temp = random.nextInt(num);
+                temp = random.nextInt(num)+1;
             }
             helperArray[temp-1] = true;
             arr[i] = temp;
