@@ -20,7 +20,9 @@ public class Question2 {
               int[] arr = new int[N];
               for (int i = 0; i < N; i++){
                   int temp = random.nextInt(N+1);  //running time of random is O(1)
-                  while (isThere(arr, temp, i)){
+                  while (isThere(arr, temp, i)){     //running time increases as the array begans to fill up
+                                                    // which as it fills, it will have more digits therefore might
+                                                    // run longer becoming log(n)
                       temp = random.nextInt(N+1);
                   }
                   arr[i] = temp;

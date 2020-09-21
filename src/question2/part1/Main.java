@@ -7,7 +7,7 @@ public class Main {
         double averageDuration = 0;
         for (int i = 0; i < 10; i++){    //will add up the running time of 10 iterations of this algo
             long startTime = System.nanoTime();
-            int[]arr = Question2.firstAlgo(2000);
+            int[]arr = Question2.firstAlgo(500);
             long endTime = System.nanoTime();
 
             double duration = (endTime - startTime);
