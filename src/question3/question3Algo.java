@@ -35,7 +35,7 @@ public class question3Algo {
 
     public static ArrayList<Integer> majority(ArrayList<Integer>arr){
         ArrayList<Integer> listB = new ArrayList<>();
-        for (int i = 0; i < arr.size(); i+=2){
+        for (int i = 0; i < arr.size()-2; i=i+2){
             if (arr.get(i) == arr.get(i+1)){
                 listB.add(arr.get(i));
             }
